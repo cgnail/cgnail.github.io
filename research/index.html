@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Liang Cheng" />
+        <title>Research – Liang Cheng</title>
+        <link rel="stylesheet" type="text/css" href="../css/default.css" />
+        <link rel="shortcut icon" href="../favicon.ico" />
+        <link rel="apple-touch-icon" href="../images/touch.png" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Make Internet Explorer recognize HTML5 tags-->
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+
+        
+    </head>
+    <body class="research">
+        <div id="content">
+            <header>
+                <h1 id="logo">
+                    <a href="../" rel="home" title"My Site" accesskey="1">Liang Cheng</a>
+                </h1>
+                <nav> 
+                    <ul>
+                        <li class="cv">
+                           <a href="../cv.html">CV</a>
+                       </li>
+                       <li class="research">
+                            <a href="../research/">Research</a>
+                        </li>
+                        <li class="publication">
+                            <a href="../publication.html">Publications</a>
+                        </li>
+                        <li class="vulnerability">
+                            <a href="../vulnerability.html">Vulnerabilities</a>
+                        </li>
+                    <!--    <li class="teaching">
+                            <a href="/teaching.html">Teaching</a>
+                        </li>
+-->
+                    </ul>
+                </nav>
+            </header>
+            <hr>
+            <div id="page">
+                
+<section>
+<h1>Research Interests</h1>
+   
+   <article class="post">
+     <ul>
+<li>Information security, especially on security measurement and assessment of information systems, access control, and security policy configuration and analysis.</li>
+<li>Program static analysis, on both source code and binary levels.</li>
+<li>Emerging security issues in cyber-physical systems</li>
+</ul>
+
+   </article>
+   
+   </section>
+
+
+
+<section>
+<h1>Funded Projects</h1>
+   
+   <article class="post">
+     <p>“MCPS Security”</p>
+<p>I am proposing to investigate a holistic framework that integrates static analysis, vulnerability profile inference, and vulnerability scoring to quantitatively measure the security of CPSs.</p>
+<ul>
+<li><p>Security mechanism design of medical cyber-physical system in an integrated clinical environment (<strong>Principle Investigator</strong>)</p>
+<ul>
+<li>Sponsor: China Scholarship Council (CSC)</li>
+<li>Amount: $20,000</li>
+<li>Duration: January 2014 – January 2015</li>
+<li>Grant Number: 201304910097</li>
+</ul></li>
+</ul>
+
+   </article>
+   
+   <article class="post">
+     <p>“Code Vulnerability Detection”</p>
+<p>Integer overflow has become the second most common type of bugs, as reported by security advisories of mainstream OS vendors. This project intends to design and develop StaticTaint, a static binary analysis tool, to detect integer overflow vulnerabilities in windows binaries.</p>
+<p>StaticTaint first translates binary executables to our intermediate representation (IR), and then performs sign type analysis to retrieve and infer necessary type information. After that, dataflow analysis is conducted on the IR to detect integer overflow vulnerabilities, which are then validated by weakest preconditions collection and solving. A key feature of StaticTaint is that it priorities and ranks detected vulnerabilities based on the information of how critical variables are affected by integer overflow at security-sensitive operations, which significantly reduce the otherwise high false positive rate. StaticTaint succeeded in detecting 2 unknown bugs in the Windows kernel, one of which has confirmed by Microsoft.</p>
+<ul>
+<li>Research on Cloud Computing-Oriented Unified Security Mechanisms (<strong>Co-PI</strong>)
+<ul>
+<li>Sponsor: National High Technology Research and Development Program of China (“863”Program)</li>
+<li>Amount: 1,800,000 RMB</li>
+<li>Duration: January 2011 – December 2013</li>
+<li>Grant Number: 2011AA01A203</li>
+</ul></li>
+</ul>
+
+   </article>
+   
+   <article class="post">
+     <p>“Access Control Verification”</p>
+<p>Access control mechanisms (ACM) play a critical role in protecting operating systems from malicious attacks. However, it is often challenging to evaluate and compare the quality of protection among arbitrary ACMs, especially when they are deployed on different platforms. This project intends to design and develop ACVAL, a systematic tool to quantitatively measure and compare the quality of different ACMs.</p>
+<p>ACVAL introduces the notion of vulnerability profiles to capture the weakness of ACMs in protecting against attacks, and the notion of vulnerability coefficients as a numeric and platform-independent measurement of the protection quality of ACMs. Based on these two notions, ACVAL applies the Grey System Theory and an independent vulnerability scoring system to calculate complete vulnerability profiles and coefficients for these ACMs, which can be used as objective evidences on the quality of these ACMs. To our knowledge, ACVAL is the first attempt for quantitative measurement and comparison of ACMs across different operating systems, a feature particularly useful to administrators of heterogeneous IT systems. ACVAL has been applied to three mainstream ACMs, and the results show that ACVAL is effective in evaluating and comparing these three ACMs.</p>
+<ul>
+<li><p>Research on Logic-Driven Evaluation of Multiple Operating System Security Mechanisms (<strong>Principle Investigator</strong>)</p>
+<ul>
+<li>Sponsor: National Natural Sciences Foundation of China (NSFC)</li>
+<li>Amount: 210,000 RMB</li>
+<li>Duration: January 2012 – December 2014</li>
+<li>Grant Number: 61100227</li>
+</ul></li>
+</ul>
+
+   </article>
+   
+   </section>
+</section>
+
+
+            </div>
+        </div>
+        <footer>
+           <p>
+               <a href="../site.html" title="License">design and most content: [(CC) BY NC SA]</a>
+           </p>
+        </footer>
+    </body>
+</html>
