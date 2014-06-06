@@ -33,4 +33,4 @@ title: Research
 
 [acval]: http://dx.doi.org/10.1016/j.cose.2014.05.001
 [MS13-083]:https://technet.microsoft.com/en-us/library/security/ms13-083
-[libpng8]: http://sourceforge.net/p/libpng/bugs/208/
+[libpng]: http://sourceforge.net/p/libpng/bugs/208/
