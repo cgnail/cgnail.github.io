@@ -12,7 +12,7 @@ title: Research
 
 ### Journals
 1. ZHANG Yang, DENG Yi, ***CHENG Liang***, SUN Xiaoshan: **INDIO: effective integer overflow detection in binary code.** Chinese Science Bulletin. (*peer-reviewed*)
-2. ***Liang Cheng***, Yang Zhang, Zhihui Han, Yi Deng, Xiaoshan Sun, Dengguo Feng: **Evaluating and comparing the quality of access control in different operating systems.** Computers & Security. (*Accepted*)
+2. ***Liang Cheng***, Yang Zhang, Zhihui Han, Yi Deng, Xiaoshan Sun, Dengguo Feng: **[Evaluating and comparing the quality of access control in different operating systems][acval].** Computers & Security. (*Accepted*)
 4. ***Liang Cheng***, Yang Zhang, and Deng-Guo Feng: **An Approach of Degenerate Test Set Generation Based on Secure State Transition.** Journal of Software, 21(3): 539-547, 2010.
 5. Yang Zhang, ***Liang Cheng***: **A New Property Verification Method for Code Security based on pointer logic.** Chinese Journal of Computers, 32(6):1119-1125, 2009.
 
@@ -29,7 +29,8 @@ title: Research
 
 ## Vulnerability Reports {#id-vul}
 1. Windows Common Control Library: a critical vulnerability could allow remote code execution.([MS13-083]/CVE-2013-3195) 
-2.  Libpng 1.7.0: an integer overflow in `png_write_start_row`([\#208])
+2.  Libpng 1.7.0: an integer overflow in `png_write_start_row`([\#208][libpng])
 
+[acval]: http://dx.doi.org/10.1016/j.cose.2014.05.001
 [MS13-083]:https://technet.microsoft.com/en-us/library/security/ms13-083
-[\#208]: http://sourceforge.net/p/libpng/bugs/208/
+[libpng8]: http://sourceforge.net/p/libpng/bugs/208/
