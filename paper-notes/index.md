@@ -3,7 +3,7 @@ layout: page
 title: "论文笔记"
 excerpt:
 image:
-  feature:
+  feature: so-simple-sample-image-3.jpg
 ---
 
 <ul class="post-list">

@@ -2,6 +2,8 @@
 layout: page
 title: Blog
 excerpt: "An archive of blog posts sorted by date."
+image:
+  feature: so-simple-sample-image-4.jpg
 ---
 
 <ul class="post-list">
