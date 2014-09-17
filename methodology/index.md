@@ -1,15 +1,13 @@
 ---
 layout: page
-title: "治学方法"
-date: 
-modified:
-excerpt:
-image:
-  feature: so-simple-sample-image-2.jpg
+title: Methodology
 ---
 
 <ul class="post-list">
 {% for post in site.categories.methodology %} 
-  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></a></article></li>
+  <article>
+      <span class="post-date">{{ post.date | date_to_string }}</span>
+      <a href="{{ site.url }}{{ post.url }}"> {{ post.title }} </a>
+  </article>
 {% endfor %}
 </ul>
