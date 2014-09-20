@@ -4,10 +4,8 @@ title: About
 ---
 ## TODO
 
-1. mathjax
-2. 文章链接不要加入日期
+1. share
 3. google analysis
-7. 目录结构调整，各page不要放在根目录下等等
 8. 评论
 9. related posts很不related啊
 10. （背景）图片怎么弄
