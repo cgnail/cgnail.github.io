@@ -1,3 +1,13 @@
+# This site
+
+This website is a record for my work and my life, powered by [Jekyll][jk] and [GitHub][gh]. The theme comes from Lanyon, and I made some customization.
+
+这个网站是我个人工作生活的一个记录，由 [Jekyll] 和 [GitHub] 「赞助」。主题采用的是[Lanyon][ly]，并作了些定制。
+
+[jk]: http://jekyllrb.com
+[gh]: http://github.com
+[ly]: http://lanyon.getpoole.com/
+
 # Lanyon
 
 Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
