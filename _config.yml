@@ -24,6 +24,14 @@ author:
   name:           'cgnail'
   url:            https://twitter.com/mdo
 
+comments:
+  provider: duoshuo
+  disqus:
+    short_name: cgnail
+  duoshuo:
+    short_name: cgnail
+
+
 # Custom vars
 version:          1.0.0
 
