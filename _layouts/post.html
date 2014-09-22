@@ -25,6 +25,13 @@ layout: default
  {% endif %}<br><br>
 {{ content }}
 </div>
+
+<!-- Back to the top button  -->
+
+<!--  sharing post on twitter -->
+{% include twitter_plug.html %} 
+
+<!-- related post  -->
 <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
@@ -40,4 +47,11 @@ layout: default
     {% endfor %}
   </ul>
 </div>
-{% include duoshuo.html %}
+
+<!-- comment frame -->
+{% case site.comments.provider %}
+{% when "duoshuo" %}
+  {% include duoshuo.html %}
+{% when "disqus" %}
+  {% include disqus.html %}
+{% endcase %}
