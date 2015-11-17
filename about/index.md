@@ -22,8 +22,15 @@ title: About
 9. related posts很不related啊
 10. （背景）图片怎么弄
 
+## 注意事项
+1. pygments的安装(参见[这里][pg]):    `gem install pygments.rb`
+    
+
+    
 [jk]: http://jekyllrb.com/
 [mdo]: https://twitter.com/mdo
 [ly]: http://lanyon.getpoole.com/
 [jl]: http://joshualande.com/jekyll-github-pages-poole/
 [ds]: http://www.blackglory.me/responsive-design-add-duoshuo-comment-box-ver-2-0/
+[pg]: http://stackoverflow.com/questions/33439019/jekyll-serve-didnt-work
+

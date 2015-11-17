@@ -7,7 +7,7 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  use_coderay: false
+  enable_coderay: false
   
 # Permalinks
 permalink:        /:categories/:title/ #pretty
@@ -18,6 +18,7 @@ tagline:          'A quantum of academic'
 description:      'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
 url:              #http://lanyon.getpoole.com
 baseurl:          '/'
+gems: [jekyll-paginate]
 paginate:         10
 
 author:
