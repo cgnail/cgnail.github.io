@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SoK: Eternal War in Memory (2013)"
+title: "内存战争 (2013)"
 categories: notes
 tags: 内存错误 程序分析 综述 Oakland 
 ---
