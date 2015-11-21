@@ -15,7 +15,7 @@ permalink:        /:categories/:title/ #pretty
 # Setup
 title:            cgnail's weblog
 tagline:          'A quantum of academic'
-description:      'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+description:      'A weblog of <a href="https://github.com/cgnail" target="_blank">@cgnail</a>.<br> Forked from a reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
 url:              #http://lanyon.getpoole.com
 baseurl:          '/'
 gems: [jekyll-paginate]
