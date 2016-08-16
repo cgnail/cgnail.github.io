@@ -21,9 +21,11 @@ tags: ALSR 内存保护 内存错误 控制流完整性 NDSS
 * 开源，并对Nginx做测试。
 
 ## 怎么做到的
-![Overview of RuntimeASLR's architecture](../images/runtime-aslr.png)
+![Overview of RuntimeASLR's architecture](/images/runtime-aslr.png)
 1. Taint Policy Generation：确定binary中和指针有关的指令，以及这些指令如何影响污点指针（Taint Policy）。如果寄存器或者内存里的值指向当前内存映射地址区间，则认为是指针。这种方法有误报，但很低，尤其是多次独立运行后对每次的结果都进行对比的情况下（文中有理论计算和实验佐证）。
+
 2. Pointer Tracking：以（程序启动时）OS初始化的指针等作为污点源，如：rsp、PC指针，以及syscall的返回值等。然后根据上一步策略做污点传播分析，获得所有需要随机化的指针的列表。
+
 3. Address Space Re-randomization：以模块为粒度对上一步得到的指针做随机化。
 
 前两步用Pin进行动态插桩获得所需信息，第三步在子进程fork之后Pin就退出。
