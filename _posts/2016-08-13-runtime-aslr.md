@@ -51,6 +51,20 @@ tags: ALSR 内存保护 内存错误 控制流完整性 NDSS
 
 ASR等在装载时进行随机化，所以会丢失进程上下文的语义（点解？）。Isomeron和DSD的思路是动态地选择间接跳转的目标，以降低被ROP猜中地址的可能性，这对clone-probing攻击没用。TASR在编译时随机化代码段，所以不能保护数据指针。
 
+-------- copied from  http://www.inforsec.org/wp/?p=1009 --------
+随机化的粒度可以改进。粒度小了，熵值增加，就很难猜出ROP gadget之类的内存块在哪里。ASLP在函数级进行随机化，(binary stirring在basic block级进行随机化，ILR和IPR在指令级。前者将指令地址进行随机化；而后者把指令串进行重写，来替换成同样长度，并且相同语义的指令串。
+
+随机化的方式可以改进。Oxymoron解决了库函数随机化的重复问题： 原先假如每个进程的library都进行fine-grained的ASLR，会导致memory开销很大。该文用了x86的segmentation巧妙地解决了这个问题；并且由于其分段特性，JIT-ROP之类的攻击也很难有效读取足够多的memory。Isomeron利用两份differently structured but semantically identical的程序copy，在ret的时候来随机化execution path，随机决定跳到哪个程序copy，有极大的概率可以让JIT-ROP攻击无效。
+
+Remix提出了一种在运行时细粒度随机化的方法。该方法以basic block为单位，经过一个随机的时间对进程(或kernel module)本身进行一次随机化。由于函数指针很难完全确认(比如被转换成数据，或者是union类型)，该方法只打乱函数内部的basic blocks。该方法另一个好处是保留了代码块的局部性(locality)，因为被打乱的basic blocks位置都很靠近。打乱后，需要update指令，以及指向basic block的指针，来让程序继续正确运行。假如需要增加更多的熵值，可以在basic blocks之间插入更多的NOP指令(或者别的garbage data)。
+
+另一种方法（CCS2015）是用编译器来帮助定位要migrate的内存位置(指针)，并且在每次有输出的时候进行动态随机化。该方法对于网络应用比如服务器，由于其是I/O-intensive的应用，可能会导致随机化间隔极短而性能开销巨大。
+
+-------- end of copy --------
+
+
+
+
 还有很多工作加强了程序的CFI，以应对ASLR被旁路后的攻击，这和本文工作是正交的。
 
 ## 然后呢
