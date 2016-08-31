@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to Make ASLR Win the Clone Wars: Runtime Re-Randomization"
+title: "How to Make ASLR Win the Clone Wars: Runtime Re-Randomization (2016)"
 categories: notes
 tags: ALSR 内存保护 内存错误 控制流完整性 NDSS 
 ---
