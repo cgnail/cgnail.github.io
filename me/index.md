@@ -3,8 +3,8 @@ layout: page
 title: Me
 ---
 
-Associate Professor
-Trusted Computing & Information Assurance Lab
+Associate Professor  
+Trusted Computing & Information Assurance Lab  
 Institute of Software, Chinese Academy of Sciences
 
 ## Research
@@ -15,8 +15,16 @@ Institute of Software, Chinese Academy of Sciences
 
 ## Publications
 
-1. Y. Zhang et al., “Improving Accuracy of Static Integer Overflow Detection in Binary,” in Research in Attacks, Intrusions, and Defenses, H. Bos, F. Monrose, and G. Blanc, Eds. Springer International Publishing, 2015, pp. 247–269.
-2. L. Cheng, Y. Zhang, Z. Han, Y. Deng, X. Sun, and D. Feng, “Evaluating and comparing the quality of access control in different operating systems,” Computers & Security, vol. 47, pp. 26–40, Nov. 2014.
+1. Y. Zhang, X. Sun, Y. Deng, L. Cheng, S. Zeng, Yu Fu, D. Feng, “Improving Accuracy of Static Integer Overflow Detection in Binary,” in *Research in Attacks, Intrusions, and Defenses*, 2015, pp. 247–269.
+2. L. Cheng, Y. Zhang, Z. Han, Y. Deng, X. Sun, and D. Feng, “Evaluating and comparing the quality of access control in different operating systems,” *Computers & Security*, vol. 47, pp. 26–40, Nov. 2014.
+
+<!--
+**Improving Accuracy of Static Integer Overflow Detection in Binary**,     
+  Y. Zhang, X. Sun, Y. Deng, L. Cheng, S. Zeng, Y. Fu, D. Feng, *RAID*, 2015, pp. 247–269.
+
+**Evaluating and comparing the quality of access control in different operating systems**,    
+L. Cheng, Y. Zhang, Z. Han, Y. Deng, X. Sun, and D. Feng, *Computers & Security*, vol. 47, pp. 26–40, Nov. 2014.
+-->
 
 ## Projects
 
